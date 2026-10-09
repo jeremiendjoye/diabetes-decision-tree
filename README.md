@@ -44,13 +44,13 @@ The root tests `hba1c` and sends every patient above 6.7 (2,113 patients, all di
 | `hypertension` | `hypertension` | binary | 0 / 1 |
 | `maladie_cardiaque` | `heart_disease` | binary | 0 / 1 |
 | `fumeur` | `smoking_status` | categorical | `non` / `ancien` / `oui` (never / former / current) |
-| `pression_sang` | `blood_pressure` | numeric | values from 80 to 300 |
+| `pression_sang` | `blood_pressure` | numeric | blood pressure according to the course data sheet; values from 80 to 300 |
 | `diabete` | `diabetes` | binary | **target**, 0 / 1 |
 | `age` | `age` | numeric | years, 0.16 to 80 |
 | `imc` | `bmi` | numeric | body mass index |
 | `hba1c` | `hba1c` | numeric | HbA1c level, 3.5 to 9.0 |
 
-The dataset was provided as course material. Its origin and collection protocol are not documented, and the unit and exact meaning of `pression_sang` are not specified in the file. It contains no direct identifier (no name, date or location).
+The dataset was provided as course material. Its origin and collection protocol are not documented, and no source is available. The column descriptions come from the data sheet given with the course (`pression_sang` is documented there as blood pressure); the CSV itself carries no unit. It contains no direct identifier (no name, date or location).
 
 ## Methodology
 
